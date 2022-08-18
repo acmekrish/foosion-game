@@ -1,13 +1,11 @@
-import React from "react";
+function Card({item, id, handleClick}){
+    const itemClass = item.stat ? " active " + item.stat : ""
 
-const Card = ({item, handleClick, id}) => {
-
-    const itemStat = item.stat ? 'active' + item.stat: ""
-    return ( 
-        < div className = {'card'+ itemStat} onClick= {() => handleClick(id)}>
-            <img src = {item.img} alt="" />
+    return (
+        <div className={"card" + itemClass} onClick={() => handleClick(id)}>
+            <img src={item.img} alt="" />
         </div>
-     );
+    )
 }
- 
-export default Card;
+
+export default Card

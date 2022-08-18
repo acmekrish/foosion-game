@@ -1,12 +1,10 @@
-import Cards from './components/cards';
-import './App.css';
+import Cards from './components/cards'
 
 function App() {
   return (
     <div className="App">
-    <h1>Foosion's Memory game</h1>
-    <Cards />
-  
+      <h1>Memory Game -  React</h1>
+      <Cards />
     </div>
   );
 }
